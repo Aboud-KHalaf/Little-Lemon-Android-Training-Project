@@ -43,6 +43,7 @@ fun UpperPanel() {
         )
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .padding(top = 20.dp)
         ) {
@@ -64,7 +65,9 @@ fun UpperPanel() {
             )
         }
         Button(
-            onClick = { },
+            onClick = {
+                println("hello")
+            },
             shape = RoundedCornerShape(10.dp),
             colors = ButtonDefaults.buttonColors(backgroundColor = PrimaryYellow)
         ) {
